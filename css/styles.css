@@ -1,0 +1,75 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color: #F2F1EF;
+    --dark-color: #161513;
+    --accent-color: #E94D35;
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: var(--dark-color);
+
+}
+
+.container__big{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* _______________________________________________Header________________________________________ */
+
+.header {
+    font-size: 16px;
+    line-height: 24px;
+}
+.header__inner {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 96px;
+    padding-top:32px;
+    padding-bottom: 32px;
+
+}
+.header__logo {
+}
+.header__logo-img {
+}
+.header__menu {
+}
+.header__menu-list {   
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.header__menu-items  +.header__menu-items {
+    margin-left: 32px;
+
+}
+.header__button {
+    background-color: transparent;
+    width: 126px;
+    height: 42px;
+    cursor: pointer;
+}
