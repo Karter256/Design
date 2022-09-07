@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=DM+Sans:wght@400;500;700&display=swap');
+
 *, *::after, *::before{
     box-sizing: border-box;
 }
@@ -11,10 +13,10 @@
 body{
     font-family: 'Bai Jamjuree', sans-serif;
     color: var(--dark-color);
-
+    background-color: var(--background-color);
 }
 
-.container__big{
+.container{
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -39,37 +41,167 @@ a{
 .header {
     font-size: 16px;
     line-height: 24px;
-}
-.header__inner {
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 96px;
     padding-top:32px;
     padding-bottom: 32px;
+}
 
-}
-.header__logo {
-}
-.header__logo-img {
-}
-.header__menu {
-}
-.header__menu-list {   
-     display: flex;
+.header__menu-list{   
+    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
+    /* align-items: center;
+    justify-content: center; */
 }
+
 .header__menu-items  +.header__menu-items {
     margin-left: 32px;
-
 }
+
 .header__button {
     background-color: transparent;
     width: 126px;
     height: 42px;
     cursor: pointer;
+}
+
+/* ____________________________________________Intro_________________________________________ */
+
+.intro{
+    display: flex;
+    gap: 43px;
+    margin-top: 40px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.intro__text{
+    max-width: 675px;
+}
+
+.intro__text-header{
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+}
+
+.intro__decore{
+    margin: 0 12px;
+}
+
+.intro__badges{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.intro__badges-text+.intro__badges-text::before{
+    content: url(../images/star.svg);
+    height: 20px;
+    margin:  8px 16px;
+}
+
+.intro__badges-text{
+font-size: 23px; 
+line-height: 32px;
+}
+
+.intro__connect{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.intro__connect-text{
+    border: 1px solid var(--dark-color);
+    background-color: var(--dark-color);
+    color: #fff;
+    padding: 12px 33px;
+}
+
+.intro__connect-btn{
+    width: 144px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid var(--dark-color);
+
+}
+
+/* ____________________________________________Skewed__________________________________________ */
+
+.skewed {
+    height: 64px;
+    transform: rotate(-5deg);
+}
+
+.skewed__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 123px;
+}
+
+
+.skewed__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--dark-color);
+    height: 64px;
+    padding-left: 25px;
+
+
+}
+.skewed__list-item {
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFF;
+    margin-right: 9px;
+    height: 32px;
+    
+
+}
+
+.skewed__list-item{
+    
+}
+
+.skewed__list-item + .skewed__list-item::after {
+    content: url(../images/star.svg);
+    margin: auto 62px auto 9px;
+}
+
+/* ___________________________________________Info________________________________________________ */
+
+.info {
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.info__name {
+}
+.info__name-name {
+}
+.info__name-vacancy {
+}
+.info__short {
+}
+.info__short-main {
+}
+.info__short-sec {
+}
+.info__short-data {
+}
+.info__short-city {
+}
+.info__short-head {
+}
+.info__short-expericence {
+}
+.info__short-age {
 }

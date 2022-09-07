@@ -5,29 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Designer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container__big">
-            <div class="header__inner">
-                <a class="header__logo" href="#">
-                    <img class="header__logo-img" src="images/logo.svg" alt="">
-                </a>
-                <nav class="header__menu">
-                    <ul class="header__menu-list">
-                        <li class="header__menu-items"> <a class="header__menu-link" href="#">Home</a> </li>
-                        <li class="header__menu-items"> <a class="header__menu-link" href="#">About</a> </li>
-                        <li class="header__menu-items"> <a class="header__menu-link" href="#">Contact</a> </li>
-                    </ul>
-                </nav>
-                <button class="header__button"><span class="button__text">Let's talk</span></button>
-            </div>
-        </div>
+    <header class="header container">
+        <a class="header__logo" href="#">
+            <img class="header__logo-img" src="images/logo.svg" alt="">
+        </a>
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-items"> <a class="header__menu-link" href="#">Home</a> </li>
+                <li class="header__menu-items"> <a class="header__menu-link" href="#">About</a> </li>
+                <li class="header__menu-items"> <a class="header__menu-link" href="#">Contact</a> </li>
+            </ul>
+        </nav>
+        <button class="header__button"><span class="button__text">Let's talk</span></button>
     </header>
+    <main>
+        <section class="intro container">
+            <div class="intro__text">
+                <h1 class="intro__text-header">HI, I’M TAYLER. <br> A CREATIVE <span><img class="intro__decore" src="images/sun.svg" alt=""></span> DESIGNER BASED IN LONDON</h1>
+                <div class="intro__badges">
+                    <p class="intro__badges-text">DESIGN</p>
+                    <p class="intro__badges-text">DEVELOPMENT</p>
+                    <p class="intro__badges-text">WEBFLOW</p>
+                </div>
+                <div class="intro__connect">
+                    <p class="intro__connect-text">Got a project?</p>
+                    <button class="intro__connect-btn">Let's talk.</button>
+                </div>
+            </div>
+            <img class="intro__img" src="images/tyler.png" alt="">
+        </section>
+        <section class="skewed skewed__container" >
+            <ul class="skewed__list">
+                <li class="skewed__list-item">BRANDING</li>
+                <li class="skewed__list-item">MOTION GRAPHIC</li>
+                <li class="skewed__list-item">STRATEGY</li>
+                <li class="skewed__list-item">ART DIRECTION</li>
+                <li class="skewed__list-item">PRODUCT DESIGN</li>
+                <li class="skewed__list-item">DEVELOPMENT</li>
+                <li class="skewed__list-item">DESIGN</li>
+                <li class="skewed__list-item">DEVELOMENT</li>
+            </ul>
+        </section>
+        <section class="info container">
+            <div class="info__name">
+                <p class="info__name-name">Tyler Barthhold</p>
+                <h2 class="info__name-vacancy">Lead product designer and art director.</h2>
+            </div>
+            <div class="info__short">
+                <p class="info__short-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                <p class="info__short-sec">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="info__short-data">
+                    <div class="info__short-city">
+                        <p class="info__short-head">BORN IN</p>
+                        <p class="info__short-main">New York</p>
+                    </div>
+                    <div class="info__short-expericence">
+                        <p class="info__short-head">EXPERIENCE</p>
+                        <p class="info__short-main">7+ Years</p>
+                    </div>
+                    <div class="info__short-age">
+                        <p class="info__short-head">DATE OF BIRTH</p>
+                        <p class="info__short-main">27 June 1992</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>
