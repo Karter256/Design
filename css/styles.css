@@ -509,3 +509,39 @@ display: flex;
     margin-left: 34px;
     margin-bottom: 30px;
 }
+
+/* ________________________________Customer___________________________________ */
+
+.customer {
+    margin-bottom: 112px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.customer::before {
+   content: url(../images/sun.svg);
+   margin-bottom: 22px;
+}
+.customer__heading {
+    font-size: 45px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 1.44px;
+    margin-bottom: 60px;
+
+}
+.customer__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 32px;
+    width: 100%;
+}
+.customer__list-item {
+    border: 1px solid #131416;
+    max-width: 241px;
+    height: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
