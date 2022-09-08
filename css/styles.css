@@ -21,6 +21,11 @@ body{
     margin: 0 auto;
 }
 
+.container__small{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
 h1,h2,h3,h4,h5,h6{
     padding: 0;
     margin: 0;
@@ -40,6 +45,7 @@ p{
     margin: 0;
     padding: 0;
 }
+
 
 /* _______________________________________________Header________________________________________ */
 
@@ -79,13 +85,17 @@ p{
 
 .intro{
     display: flex;
-    gap: 43px;
     margin-top: 40px;
-    align-items: center;
+}
+
+.intro__image{
+    width:562px;
+    height:563px;
 }
 
 .intro__text{
     max-width: 675px;
+    margin-right: 43px;
 }
 
 .intro__text-header{
@@ -188,6 +198,8 @@ text-transform: uppercase;
 
 .info {
     display: flex;
+    margin-bottom: 120px;
+
 }
 
 .info__name-name {
@@ -213,7 +225,6 @@ text-transform: uppercase;
 
 .info__short {
     max-width: 598px;
-    max-height: 32px;
 }
 
 .info__short-main {
@@ -247,4 +258,193 @@ text-transform: uppercase;
     font-size: 23px;
     line-height: 32px;
     letter-spacing: 0.48px;
+}
+/* _____________________________________Info__big_______________________________________________ */
+
+.info__big-bages {
+    display: flex;
+    flex-direction: row;
+    height: 152px;
+    max-width: 1060px;
+    margin: 0 auto;
+    margin-bottom: 180px;
+    
+
+}
+.info__big {
+    border: 1px solid var(--dark-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.info__big:nth-child(even){
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+
+.info__big-number {
+    font-size: 56px;
+line-height: 64px;
+}
+.info__big-text {
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+
+}
+
+/* _________________________________________Awards_______________________________________________ */
+
+.awards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 120px;
+}
+.awards__heading {
+    font-size: 45px;
+    line-height: 56px;
+    letter-spacing: 1.44px;
+    text-align: center;
+}
+.awards::before {
+    content: url(../images/sun.svg);
+    transform: translateY(-22px);
+}
+.awards__subheading {
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+.awards__list {
+    width: 100%;
+}
+
+.awards__list-item {
+    border: 2px solid var(--dark-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 23px;
+    padding: 38px 33px;
+}
+
+.awards__names {
+    display: flex;
+    max-width: 367px;
+    align-items: center;
+
+}
+
+.awrds__number {
+    margin-right: 24px;
+}
+
+.awards__text {
+    width: 295px;
+}
+
+.awards__name {
+    font-size: 23px;
+    line-height: 32px;
+    letter-spacing: 0.48px; 
+}
+
+.awards__place {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.awards__year {
+    max-width: 197px;
+    font-size: 16px;
+line-height: 32px;
+display: flex;
+}
+
+.awards__date {
+    margin-left: 16px;
+}
+
+/* ________________________________________Portfolio___________________________________________ */
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio::before {
+    content: url(../images/sun.svg);
+}
+.portfolio__header {
+    font-size: 45px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 1.44px;
+    margin-bottom: 17px;
+}
+.portfolio__subheader {
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.portfolio__content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.design__block{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 96px;
+}
+
+.design__block:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+
+
+.design__website {
+}
+.design__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 556px;
+}
+.design__badge {
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    background-color: var(--accent-color);
+    display: inline-block;
+    margin-top: 24px;
+    margin-bottom: 35px;
+    color: #fff;
+    padding: 5px 12px;
+
+}
+.design__heading {
+    font-size: 45px;
+    line-height: 56px;
+    letter-spacing: 1.44px;
+}
+
+.design__link {
+    font-size: 20px;
+    line-height: 32px;
 }
