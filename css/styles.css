@@ -76,7 +76,15 @@ p{
     width: 126px;
     height: 42px;
     cursor: pointer;
+    transition: all .3s;
 }
+
+.header__button:hover {
+    background-color: var(--dark-color);
+    color: #FFF;
+}
+
+
 
 .intro__text-sun::before{
     content: url(../images/sun.svg);
@@ -153,12 +161,20 @@ text-transform: uppercase;
 
 .intro__connect-btn{
     width: 144px;
-    height: 50px;
+    height: 51px;
     font-size: 16px;
     line-height: 24px;
-    border: 1px solid var(--dark-color);
+    border: 2px solid var(--dark-color);
+    transition: all .3s;
+
 
 }
+.intro__connect-btn:hover{
+    background-color: var(--dark-color);
+    color: #FFF;
+}
+
+
 
 /* ____________________________________________Skewed__________________________________________ */
 
@@ -554,6 +570,10 @@ display: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(../images/sun.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% + 14%) 74%;
+    background-size: 240px;
 }
 
 .articles::before{
@@ -632,6 +652,8 @@ display: flex;
     margin-bottom: 136px;
 }
 
+
+
     /* _________________________________________Subscribe_________________________________________ */
 
 
@@ -655,6 +677,7 @@ display: flex;
     justify-content: flex-end; 
     margin-left: auto;
     max-height: 56px;
+    height: 100%;
     
 }
 .subscribe__label {
@@ -669,7 +692,7 @@ letter-spacing: 0.48px;
     padding: 12px 22px;
     border: 2px solid #161513;
     height: 100%;
-
+    background-color: var(--background-dark);
 }
 
 .subscribe__field::placeholder{
@@ -680,7 +703,6 @@ letter-spacing: 0.48px;
 }
 
 .subscribe__button {
-
     height: 100%;  
     border: none;
     background-color: var(--dark-color);
@@ -689,7 +711,15 @@ letter-spacing: 0.48px;
     font-size: 23px;
     line-height: 32px;
     letter-spacing: 0.48px;
+    transition: all .3s;
 }
+
+.subscribe__button:hover {
+    color: var(--dark-color);
+    background-color: var(--background-dark);
+    border: 1px solid var(--dark-color);
+}
+
 
 /* __________________________________________Footer______________________________________________ */
 
@@ -699,48 +729,52 @@ letter-spacing: 0.48px;
 }
 .footer__inner{
     height: 220px;
-
     padding-top: 66px;
     padding-bottom: 26px;
     display: flex;
     justify-content: space-between;
-}
-.footer__left {
-    display: flex;
     flex-direction: column;
+}
+.footer__top,
+.footer__bottom {
+    display: flex;
     justify-content: space-between;
-
+    height: 40px;
 }
 .footer__white-logo {
     width: 32px;
 }
-.footer__signature {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-}
-.footer__right {
+.footer__top-list {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-
-}
-.footer_list {
-    display: flex;
-    flex-direction: row;
-    padding: 8px 16px;
-    max-width: 372px;
-}
-.footer__list-item {
+    gap: 46px;
+    margin-right: 16px;
     font-size: 16px;
 line-height: 24px;
-text-align: center;
-font-weight: 400;
-
 }
 .footer__list-link {
-    margin: 8px;
+    font-size: 16px;
+line-height: 24px;
+}
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__signature{
+    font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+}
+
+
+.footer__bottom-list {
+    display: flex;
+    gap: 16px;
+
+}
+.footer__list-name {
+    padding: 0 5px;
 }
 .footer__link-icon {
+    margin: 8px;
 }
